@@ -1,7 +1,7 @@
 Sigil_Pal
 =========
 
-A very basic sigil-wrt iting assistant designed to remove or lessen the effort of creating a Sigil.
+A very basic sigil-writing assistant designed to remove or lessen the effort of creating a Sigil.
 This effort, this exercise usually imprints the sigil into the conscious mind of the Mage, and 
 makes the sigil more difficult to forget, which in turn, hampers the perfomance and efficacy of the 
 operation.
