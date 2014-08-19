@@ -3,6 +3,7 @@
 #       Sigil_Pal v0.1
 #           by theblacksquid, 2014
 #       Basic Sigil-Writing Assistant
+#       Free and Open-Source, Released under the MIT License
 #
 #===============================================================================
 
