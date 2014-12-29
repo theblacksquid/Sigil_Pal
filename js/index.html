@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+
+
+<head>
+ <title>Some Page</title>
+ <link rel="stylesheet" type="text/css" href="somestyle.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+         <ul>
+            <h1>Some Page</h1>
+            <li><a href="">Some tab</a></li>
+            <li><a href="">Some tab</a></li>
+            <li><a href="">Some tab</a></li>
+         </ul>
+    </nav>
+</header>
+
+    <script src="someprog.js"></script>
+    <script>
+    function closeApp() {
+        var app = document.getElementById("box");
+        app.style.display = 'none';
+        }
+
+    function launch() {
+        var app = document.getElementById("box");
+<!--        var over = document.getElementById("overlay");
+        over.innerHTML = app; -->
+        app.style.display = 'inline-block';
+        } 
+    </script>
+
+<!--    <div id="overlay"></div> */ -->
+
+    <div class="row">
+        <div class="col">
+        <p>Some content </p>
+        <button onclick=launch()>Launch App</button>
+        </div>
+    </div>
+
+    <div class="app" id="box">
+    <p>Type your statement of intent <br /> 
+    in the box below <br /></p>
+    <input type="text" id="SOI">
+    <button onclick=exe()>Process!</button> <br />
+    <button onclick=closeApp()>Close</button>
+    </div>
+
+</body>
+
+</html>
+
