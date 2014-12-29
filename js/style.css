@@ -1,0 +1,65 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: arial;
+    background: #E6E6E6;
+
+}
+
+#overlay{   
+    position: absolute;   
+    top: 0;   left: 0;   
+    width: 100%;   
+    height: 100%;   
+    z-index: 10;   
+    background-color: rgba(0,0,0,0.5); /*dim the background*/
+} 
+
+
+nav {
+    background: #99CCFF;
+    padding: 5px;
+    margin: 0px;
+}
+
+nav ul h1 {
+    color: #444;
+    display: inline;
+    padding: 5px 10px 5px 10px
+}
+
+nav ul li {
+    display: inline;
+    padding: 5px 10px 5px 10px
+}
+
+div.row {
+    margin: 0;
+    padding: 5px 10px 5px 10px;
+    float: centered;
+    height: 70%;
+
+}
+
+div.col {
+    background: #8E8E8E;
+    float: left;
+    width: 95%;
+    height: 70%;
+    padding: 10px 15px 10px 15px;
+    z-index: -1;
+}
+
+div.app {
+    display: none;
+    background: #9BB5B5;
+    position: fixed;
+    padding: 5px 10px 5px 10px;
+    float: centered;
+    z-index: 1;
+}
