@@ -4,7 +4,7 @@
 
 <head>
  <title>Some Page</title>
- <link rel="stylesheet" type="text/css" href="somestyle.css">
+ <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -20,22 +20,36 @@
     </nav>
 </header>
 
-    <script src="someprog.js"></script>
+    <script src="SigilPal.js"></script>
     <script>
     function closeApp() {
         var app = document.getElementById("box");
+        var over = document.getElementById("overlay");
+        over.style.display = 'none'
         app.style.display = 'none';
         }
 
     function launch() {
         var app = document.getElementById("box");
-<!--        var over = document.getElementById("overlay");
-        over.innerHTML = app; -->
-        app.style.display = 'inline-block';
+        var over = document.getElementById("overlay");
+        over.style.display = 'inline-block'
+        over.innerHTML = app;
+        app.style.display = 'block';
         } 
+
+    function exe() {
+        var string = document.getElementById("SOI");
+        var str_out = document.getElementById("extract");
+        var valNum = document.getElementById("numVal");
+        var base = document.getElementById("baseNum");
+        var raw = string.value;
+        str_out.innerHTML = "Result: " + xtract_letters(raw);
+        valNum.innerHTML = "Numerical Value: " + getNumVal(getNumList(raw));
+        base.innerHTML = "Base Number: " + getBaseNum(getNumVal(getNumList(raw)));
+        }
     </script>
 
-<!--    <div id="overlay"></div> */ -->
+    <div id="overlay"></div> 
 
     <div class="row">
         <div class="col">
@@ -46,11 +60,18 @@
 
     <div class="app" id="box">
     <p>Type your statement of intent <br /> 
-    in the box below <br /></p>
-    <input type="text" id="SOI">
-    <button onclick=exe()>Process!</button> <br />
-    <button onclick=closeApp()>Close</button>
+    in the box below</p>
+    <p><input type="text" id="SOI"></p>
+    <p><button onclick=exe()>Process!</button></p>
+    <p id="extract"><p>
+    <p id="numVal"></p>
+    <p id="baseNum">
+    <p><button onclick=closeApp()>Close</button></p>
     </div>
+
+    <footer>
+        <a href="http://github.com/theblacksquid">@theblacksquid, 2014</a>
+    </footer>
 
 </body>
 
