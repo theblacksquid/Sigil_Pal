@@ -55,3 +55,29 @@ function getBaseNum(int_val) {
         }
     return result;
     }
+
+function check(item, list) {
+    for (var i in list) {
+        if (list[i] === item) {return true;}
+        };
+    return false;
+    }
+
+function xtract_letters(str_val) {
+    var result = ""; i= 0; already = [];
+    var raw = str_val.toUpperCase();
+    while (i < raw.length) {
+        var x = raw[i];
+        var isAlready = check(x, already);
+        if (isAlready === true) {
+            i = i + 1;
+            continue;
+            }
+        else {
+            already.push(x);
+            result = result + x;
+            i = i + 1;
+            }
+        };
+    return result;
+    }
